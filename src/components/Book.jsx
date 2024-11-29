@@ -6,7 +6,7 @@ export default function Book({ id, title, author, genre, createdAt, updatedAt, f
   const [newAuthor, setNewAuthor] = useState(author);
   const [newGenre, setNewGenre] = useState(genre);
 
-  const handleDelete = () => fetch('/api/books/delete', {
+  const handleDelete = () => fetch('https://mern-backend-2x41.onrender.com/api/books/delete', {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ export default function Book({ id, title, author, genre, createdAt, updatedAt, f
     if (author !== newAuthor) body.author = newAuthor
     if (genre !== newGenre) body.genre = newGenre */
 
-    fetch('/api/books/edit', {
+    fetch('https://mern-backend-2x41.onrender.com/api/books/edit', {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'

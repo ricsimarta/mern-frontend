@@ -6,7 +6,7 @@ import NewBook from './components/NewBook';
 function App() {
   const [books, setBooks] = useState(null);
 
-  const fetchBooks = () => fetch("/api/books/all")
+  const fetchBooks = () => fetch("https://mern-backend-2x41.onrender.com/api/books/all")
     .then(res => res.json())
     .then(data => setBooks(data))
     .catch(err => console.log(err))

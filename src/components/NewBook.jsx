@@ -8,7 +8,7 @@ export default function NewBook({ fetchBooks }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('/api/books/new', {
+    fetch('https://mern-backend-2x41.onrender.com/api/books/new', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
