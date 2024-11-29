@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./newBook.css";
 
 export default function NewBook({ fetchBooks }) {
   const [title, setTitle] = useState("");
@@ -29,6 +30,7 @@ export default function NewBook({ fetchBooks }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Add new book</h2>
       <input type="text" placeholder="title" onChange={event => setTitle(event.target.value)} />
       <input type="text" placeholder="author" onChange={event => setAuthor(event.target.value)} />
       <input type="text" placeholder="genre" onChange={event => setGenre(event.target.value)} />

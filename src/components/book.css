@@ -1,0 +1,73 @@
+div.book {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  border: 2px solid black;
+
+  padding: 20px;
+
+  width: 100%;
+  max-width: 400px;
+  min-height: 250px;
+}
+
+div.book div.buttons {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  gap: 10px;
+}
+
+div.book div.buttons button {
+  border: 1px solid transparent;
+  background-color: transparent;
+
+  padding: 2px 3px;
+}
+
+div.book div.buttons button:hover {
+  cursor: pointer;
+
+  border: 1px solid black;
+}
+
+div.book div.book-data h5 {
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+div.book h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+div.book div.book-data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.book div.book-data h4 {
+  font-style: italic;
+}
+
+div.book p.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.book p.dates > span {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}

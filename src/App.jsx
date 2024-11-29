@@ -20,16 +20,18 @@ function App() {
       {books &&
         <div className='content'>
           <NewBook fetchBooks={fetchBooks} />
-          {books.map(book => <Book
-            key={book._id}
-            id={book._id}
-            title={book.title}
-            author={book.author}
-            genre={book.genre}
-            createdAt={book.createdAt}
-            updatedAt={book.updatedAt}
-            fetchBooks={fetchBooks}
-          />)}
+          <div className='books'>
+            {books.map(book => <Book
+              key={book._id}
+              id={book._id}
+              title={book.title}
+              author={book.author}
+              genre={book.genre}
+              createdAt={book.createdAt}
+              updatedAt={book.updatedAt}
+              fetchBooks={fetchBooks}
+            />)}
+          </div>
         </div>
       }
     </div>
